@@ -1,0 +1,25 @@
+/* chipmunkyDatepicker */
+.chipmunkyDatepicker { display:inline-block; width:287px; margin:0; border:solid 1px #ccc; -webkit-touch-callout:none; -webkit-user-select:none; -khtml-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; }
+.chipmunkyDatepicker div.monthName { margin:0; text-align:center; line-height:40px; }
+.chipmunkyDatepicker ul { position:relative; list-style:none; margin:0; padding:0; }
+.chipmunkyDatepicker ul.monthsNav { }
+.chipmunkyDatepicker ul.monthsNav li { position:absolute; top:0; width:40px; height:40px; color:#666; text-align:center; line-height:40px; font-size:22px; transition:background ease-in-out .25s; }
+.chipmunkyDatepicker ul.monthsNav li:hover { background:#eee; }
+.chipmunkyDatepicker ul.monthsNav li.prev { left:0; }
+.chipmunkyDatepicker ul.monthsNav li.prev:before { content:"<"; }
+.chipmunkyDatepicker ul.monthsNav li.next { right:0; }
+.chipmunkyDatepicker ul.monthsNav li.next:before { content:">"; }
+
+.chipmunkyDatepicker table.monthDays { width:100%; table-layout:fixed; border-spacing:1px; border-collapse:separate; }
+.chipmunkyDatepicker table.monthDays thead { }
+.chipmunkyDatepicker table.monthDays thead td { height:30px; vertical-align:middle; text-align:center; background:transparent; color:#666; }
+.chipmunkyDatepicker table.monthDays tbody { }
+.chipmunkyDatepicker table.monthDays tbody td { height:30px; vertical-align:middle; text-align:center; cursor:default; }
+.chipmunkyDatepicker table.monthDays tbody td.available { background:#ccc; color:#000; transition:all ease-in-out .25s; cursor:pointer; }
+.chipmunkyDatepicker table.monthDays tbody td.available:hover { opacity:.7; }
+.chipmunkyDatepicker table.monthDays tbody td.available.current { }
+.chipmunkyDatepicker table.monthDays tbody td.unavailable { background:#eee; color:#ccc; }
+.chipmunkyDatepicker table.monthDays tbody td.current { font-weight:bold; opacity:.7; }
+.chipmunkyDatepicker table.monthDays tbody td.selected { background:#666; color:#fff; }
+.chipmunkyDatepicker table.monthDays tbody td.lastMonth,
+.chipmunkyDatepicker table.monthDays tbody td.nextMonth { background:#eee; }
